@@ -1,0 +1,1 @@
+This repository demonstrates a subtle error in Tcl's file I/O handling. The `open` command returns -1 if a file cannot be opened, but the `read` command doesn't check for this, leading to errors if you try to read from a non-existent file.  The solution shows improved error handling to address this issue.
